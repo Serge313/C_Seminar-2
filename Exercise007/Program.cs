@@ -5,7 +5,11 @@ double secondDotSecondCoordinate = GetNumber("Enter the second coordinate of the
 double firstCathetus = Cathetus(firstDotFirstCoordinate, secondDotFirstCoordinate);
 double secondCathetus = Cathetus(firstDotSecondCoordinate, secondDotSecondCoordinate);
 double distance = Distance(firstCathetus, secondCathetus);
-Console.WriteLine(distance);
+Console.WriteLine("A (" + firstDotFirstCoordinate + "," + firstDotSecondCoordinate + "); B (" + secondDotFirstCoordinate + "," + secondDotSecondCoordinate + ") -> " + distance);
+
+
+/* Предыдущая строка написанная с помощью интерполяции:
+Console.WriteLine($"A({firstDotFirstCoordinate}, {firstDotSecondCoordinate}); B({secondDotFirstCoordinate}, {secondDotSecondCoordinate}) -> {distance}"); */
 
 
 double Cathetus(double a, double b)
